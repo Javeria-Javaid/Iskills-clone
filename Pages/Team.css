@@ -1,0 +1,177 @@
+.team-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  padding: 60px 40px;
+  font-family: "Poppins", sans-serif; 
+  height: 500px;
+}
+
+/* Left and right column styles */
+.left-members
+ {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  margin-left: 10%;
+}
+.right-members{
+  display: flex;
+  margin-bottom:20% ;
+  flex-direction: column;
+  width: 30%;
+  height: 500px;
+  margin-right: 5%;
+  
+}
+
+/* Center (CEO) */
+
+.center-ceo {
+  text-align: center;
+  position: relative;
+  justify-content: center;
+}
+
+.ceo-circle {
+  width: 290px;
+  height: 290px;
+  background: #ff7b00;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 6px solid #fff;
+  box-shadow: 0 0 0 8px #e5dcff;
+  
+}
+
+.ceo-circle img {
+  width: 290px;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+
+.center-ceo h2 {
+  font-size: 1.8rem;
+  color: #0b1b40;
+  margin-top: 15px;
+}
+
+.center-ceo p {
+  color: #444;
+  font-size: 1rem;
+}
+
+/* Member card */
+
+.member {
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.member .info {
+  margin-right: 15px;
+}
+
+.member h3 {
+  margin: 0;
+  font-size:15px;
+  color: #0b1b40;
+  font-weight: 700;
+}
+
+.member p {
+  font-size: 12px;
+  color: #333;
+}
+
+
+/* Image circles */
+.img-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.img-circle img {
+  margin-top: 20px;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.left-m1{
+  padding-top: 18%;
+  margin-left: 10%;
+}
+
+.left-m3{
+  margin-left: 10%;
+}
+
+.right-m1{
+  margin-top: 30%;
+  margin-right: 10%;
+}
+
+.right-m2{
+  margin-left: 10%;
+}
+
+.right-m3{
+  margin-right: 30%;
+}
+
+/* Color backgrounds */
+.purple {
+  background: #d9a5ff;
+}
+
+.pink {
+  background: #f8d7d7;
+}
+
+.green {
+  background: #a5f7b6;
+}
+
+.yellow {
+  background: #ffe9a1;
+}
+
+.sky {
+  background: #c7eeff;
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .team-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-members,
+  .right-members {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+  }
+  .member {
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+  }
+  .member .info {
+    margin-left: 0;
+  }
+}

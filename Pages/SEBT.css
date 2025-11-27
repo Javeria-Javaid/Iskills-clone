@@ -1,0 +1,294 @@
+
+.Sebt-container{
+    margin-top: 120px;
+    margin-left: 50px;
+}
+
+.faq-containers {
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 100px;
+}
+
+ #batch{
+    color: rgb(255, 115, 0);
+}
+
+.rating{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.rating p{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.rating span{
+    font-size: small;
+    font-weight: 600;
+    opacity: 0.5;
+    padding-left: 2px;
+}
+
+.hero-both{
+    display: flex;
+    gap: 40px;
+    height: 350px;
+}
+
+.white-div1{
+    margin-top: 20px;
+    height: 430px;
+    width: 30%;
+    background-color: white;
+    border-radius: 20px;
+}
+#rs{
+    font-weight: 700;
+    font-size: 32px;
+    padding: 15px 0 0 15px;
+}
+
+.hero-bg {
+  width: 62%;
+  height: 60vh;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-image: url("https://media.istockphoto.com/id/2197955227/photo/humans-are-using-laptops-and-computers-to-interact-with-ai-helping-them-create-code-train-ai.webp?a=1&b=1&s=612x612&w=0&k=20&c=p8GsIZS4sS58ubkyslWk6ChVyDe5S4HDwxxznIsm-v4="); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-Dbg {
+  width: 62%;
+  height: 60vh;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-image: url("https://www.simplilearn.com/ice9/free_resources_article_thumb/is_web_development_good_career.jpg"); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hero-CSbg {
+  width: 62%;
+  height: 60vh;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-image: url("https://media.istockphoto.com/id/1350595566/photo/cyber-security-firewall-interface-protection-concept-businesswoman-protecting-herself-from.jpg?s=612x612&w=0&k=20&c=9i4-mWszc5FRU_iaI3ISHkmJKHn1ZCfhWjechO4H9NY="); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  font-size: 35px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#training-program{
+    font-size: 15px;
+    line-height: 1.2rem;
+    color: #011a35;
+}
+
+#training{
+    font-size: 22px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+/*--- 4-tab Layout---*/
+
+.container {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 40px;
+  border-bottom: 2px solid #d8c9ff;
+}
+
+.tabs button {
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  padding: 10px;
+  cursor: pointer;
+  color: black;
+}
+
+.tabs button.active {
+  color: #7a32ff;
+  border-bottom: 1px solid #7a32ff;
+}
+
+.tab-content {
+  margin-top: 30px;
+}
+
+.content-box{
+    margin-left: 30px;
+    width: 90%;
+}
+
+.content-box h2 {
+  margin-bottom: 15px;
+  color: #1e1e1e;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0;
+  line-height: 1.5;
+}
+
+
+.star {
+  margin-top:3px;
+  width: 16px;
+  height: 16px;
+  background: rgb(255, 153, 0);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star::before {
+  content: "★";
+  color: white;
+  font-size: 12px;
+}
+
+.faq-questions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 22px;
+  color: #111827;
+  font-size: small;
+  font-weight: 600;
+}
+
+.faq-answers {
+  background-color: #f9f9ff;
+  color: #333;
+  overflow: hidden;
+  padding: 0 22px;
+}
+
+.faq-answers p {
+  font-size: 10px;
+  line-height: 1.6;
+  margin: 15px 0;
+  justify-content: left;
+  
+}
+.scroll-fill-textt {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: transparent;
+  background-image: linear-gradient(90deg, #212021);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: background-size 1.8s cubic-bezier(0.5, 1, 0.5, 1);
+  will-change: background-size;
+  animation: gradientMove 10s infinite linear;
+}
+
+.white-faq{
+    margin-left: 30%;
+    margin-top: 20px;
+    background-color:#ffff;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: black;
+    width: 32%;
+    height: 400px;
+}
+
+.white-faq h2{
+    padding: 20px 0 5px 0;
+    text-align: center;
+}
+
+#price{
+    text-align: center;
+    font-weight: 600;
+}
+
+#div-p{
+    font-size: medium;
+    font-weight: 600;
+    line-height: 3rem;
+    padding: 10px 0 0 25px;
+}
+.stories{
+    text-align: left;
+    margin-right: 5px;
+
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+   gap: 2rem;
+   margin-left: 50px;
+  
+}
+
+.images img{
+    width: 450px;
+    height: 450px;
+    
+}
+.enrolll{
+ background:linear-gradient(to right,#9051e7,#7317f4);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 17px;
+  cursor: pointer;
+  width: 15%;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 10px;
+  transition: background 0.4s ease;
+
+}
+
+.enrolll:hover {
+  background:linear-gradient(to right,#7317f4,#9051e7);
+}
+

@@ -1,0 +1,154 @@
+.tools-wrapper {
+  height: 1200px;
+  background-color: white;
+  text-align: center;
+  padding: 40px 0;
+  font-family: sans-serif;
+  margin-top: 40px;
+}
+.seo-header {
+  text-align: center;
+  padding: 80px 20px;
+  height: 300px;
+  margin-bottom: 40px;
+  background: radial-gradient(
+      circle at 10% 20%,
+      rgba(199, 175, 243, 0.20) 0%,
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(210, 188, 244, 0.20) 60%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(173, 207, 236, 0.20) 0%,
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(177, 162, 231, 0.25) 100%
+    );
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(32, 31, 31);
+}
+
+.sub {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: rgb(28, 27, 27);
+}
+
+.subb{
+  font-size: 15px;
+}
+
+.search-bar {
+  width: 95%;
+  max-width: 1200px;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.search-bar input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: #333;
+}
+
+.icon {
+  font-size: 26px;
+  color: black;
+}
+
+
+/* ---------------- CATEGORY BUTTONS ---------------- */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.buttons button {
+  width: 15%;
+  padding: 10px 25px;
+  border-radius: 3px;
+  border: none;
+  background: #f2e9ff;
+  color: #6b0af3;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.buttons button.active {
+  background: linear-gradient(90deg, #9a4dff, #6a00ff);
+  color: white;
+}
+
+
+.tools-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.card {
+  width: 180px;
+  background: white;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+  margin-bottom: 70px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.card-img {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  display: block;
+  opacity: 0.9;
+}
+
+.card-title {
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.contact-btn {
+  margin-top: 20px;
+  width: 12%;
+  height: 40px;
+  background: linear-gradient(90deg, #9a4dff, #6a00ff);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  transform: scale(1.05);
+}

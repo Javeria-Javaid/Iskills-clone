@@ -1,0 +1,160 @@
+.white-divv{
+    margin-top: 40px;
+    margin-right:40px ;
+    min-height: 500px;
+    width: 30%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  padding: 24px;
+  flex-wrap: wrap;
+}
+
+
+.card {
+    width: calc(33.333% - 20px);
+background: white;
+border-radius: 14px;
+box-shadow: 0 8px 18px rgba(97, 64, 187, 0.08);
+overflow: hidden;
+display: flex;
+flex-direction: column;
+min-height: 520px;
+border: 1px solid rgba(0,0,0,0.03);
+}
+
+
+.card-image img {
+width: 100%;
+height: 180px;
+object-fit: cover;
+display: block;
+}
+
+
+.card-body {
+padding: 18px;
+flex: 1 1 auto;
+display: flex;
+flex-direction: column;
+}
+
+
+.card-title {
+margin: 4px 0 10px 0;
+font-size: 18px;
+font-weight: 700;
+color: #14142b;
+}
+
+
+.trainer {
+display: flex;
+align-items: center;
+gap: 10px;
+color: #6b21a8;
+margin-bottom: 12px;
+}
+
+
+.icon {
+background: #f3e8ff;
+padding: 6px;
+border-radius: 50%;
+}
+
+.trainer-name .muted {
+color: #9aa0b4;
+font-weight: 500;
+margin-left: 6px;
+}
+
+
+.card-desc {
+color: #4b5563;
+font-size: 14px;
+line-height: 1.45;
+margin-bottom: 16px;
+flex: 1 0 auto;
+}
+
+
+.meta {
+display: flex;
+gap: 18px;
+margin-bottom: 18px;
+}
+
+
+.meta-item {
+display: flex;
+gap: 10px;
+align-items: center;
+}
+
+
+.meta-icon {
+background: #f5f0ff;
+padding: 8px;
+border-radius: 8px;
+font-size: 18px;
+}
+
+
+.meta-value {
+font-weight: 700;
+color: #2d2b3a;
+}
+
+
+.muted.small {
+font-size: 12px;
+color: #9aa0b4;
+}
+
+
+.card-footer {
+margin-top: auto;
+padding-top: 8px;
+}
+
+.detail-btn {
+ background:linear-gradient(to right,#9051e7,#7317f4);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  transition: background 0.4s ease;
+
+}
+
+.detail-btn:hover {
+  background:linear-gradient(to right,#7317f4,#9051e7);
+}
+
+.detail-btn a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .card { width: calc(50% - 20px); }
+}
+
+@media (max-width: 640px) {
+  .card { width: 100%; min-height: 420px; }
+  .card-image img { height: 160px; }
+}
