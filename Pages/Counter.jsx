@@ -2,16 +2,16 @@ import React from "react";
 import "./Counter.css";
 
 const statsData = [
-  { icon: <img src="https://iskills.com/wp-content/uploads/2024/03/calander.svg" />, number: "8+", label: "Years of Experience" },
-  { icon: <img src="https://iskills.com/wp-content/uploads/2024/03/batch-star.svg" />, number: "14+", label: "Successful Batches" },
-  { icon: <img src="https://iskills.com/wp-content/uploads/2024/03/user-star.svg" />, number: "14,000+", label: "Graduated Students" },
-  { icon: <img src="https://iskills.com/wp-content/uploads/2024/03/dollar.svg"/>, number: "$300M+", label: "Cumulative Revenue" },
+  { icon: <img src="https://iskills.com/wp-content/uploads/2024/03/calander.svg" alt="experience" />, number: "10+", label: "Years of Excellence" },
+  { icon: <img src="https://iskills.com/wp-content/uploads/2024/03/batch-star.svg" alt="batches" />, number: "5+", label: "Successful Bootcamp Batches" },
+  { icon: <img src="https://iskills.com/wp-content/uploads/2024/03/user-star.svg" alt="students" />, number: "500+", label: "Tech Professionals Trained" },
+  { icon: <img src="https://iskills.com/wp-content/uploads/2024/03/dollar.svg" alt="projects" />, number: "100+", label: "Real-World Projects Delivered" },
 ];
 
 const StatsSection = () => {
   return (
     <section className="stats-section">
-      <h2 className="stats-heading">Our numbers speaks for itself</h2>
+      <h2 className="stats-heading">ATechSole's Track Record of Excellence</h2>
       <div className="stats-container">
         {statsData.map((item, index) => (
           <div className="stat-box" key={index}>

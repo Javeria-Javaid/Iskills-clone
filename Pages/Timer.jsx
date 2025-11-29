@@ -61,14 +61,14 @@ const Timer = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  
 
 
-const [time, setTime] = useState({
-    days: -335,
-    hours: -9,
-    minutes: -52,
-    seconds: -25,
+
+  const [time, setTime] = useState({
+    days: -30,
+    hours: -12,
+    minutes: -45,
+    seconds: -30,
   });
 
   useEffect(() => {
@@ -101,53 +101,53 @@ const [time, setTime] = useState({
   return (
 
     <>
-     <div className='regis'>
-        <h1  ref={textRef}
-      className="scroll-fill-text"
-      style={{
-        backgroundSize: `${fillPercent}% 100%`,
-      }}
-      >Registration are Open</h1>
+      <div className='regis'>
+        <h1 ref={textRef}
+          className="scroll-fill-text"
+          style={{
+            backgroundSize: `${fillPercent}% 100%`,
+          }}
+        >Next Batch Enrollment Open</h1>
         <p ref={textReff}
-      className={`drop-text ${isVisible ? "visible" : ""}`}>Enroll Now</p>
+          className={`drop-text ${isVisible ? "visible" : ""}`}>Join DEVSECAI Bootcamp</p>
       </div>
-    <section className="timer-section">
-      <div className="timer-container">
-        <div className="time-box">
-          <h4>Days</h4>
-          <span>{time.days}</span>
+      <section className="timer-section">
+        <div className="timer-container">
+          <div className="time-box">
+            <h4>Days</h4>
+            <span>{time.days}</span>
+          </div>
+          <span className="colon">:</span>
+          <div className="time-box">
+            <h4>Hours</h4>
+            <span>{time.hours}</span>
+          </div>
+          <span className="colon">:</span>
+          <div className="time-box">
+            <h4>Minutes</h4>
+            <span>{time.minutes}</span>
+          </div>
+          <span className="colon">:</span>
+          <div className="time-box">
+            <h4>Seconds</h4>
+            <span>{time.seconds}</span>
+          </div>
         </div>
-        <span className="colon">:</span>
-        <div className="time-box">
-          <h4>Hours</h4>
-          <span>{time.hours}</span>
-        </div>
-        <span className="colon">:</span>
-        <div className="time-box">
-          <h4>Minutes</h4>
-          <span>{time.minutes}</span>
-        </div>
-        <span className="colon">:</span>
-        <div className="time-box">
-          <h4>Seconds</h4>
-          <span>{time.seconds}</span>
-        </div>
+      </section>
+
+      <div className="support">
+        <p >Meet Our Team 👋🏻 ——— —  </p>
+        <h1>Expert Instructors from ATechSole</h1>
+        <p ref={textRef1}
+          className="scroll-fill-text1" id="para"
+          style={{
+            backgroundSize: `${fillPercent1}% 100%`,
+          }}>Founded by Mustansar Riaz, ATechSole has grown into a leading tech company. Our DEVSECAI Bootcamp is led by
+          <br /> industry experts who bring real-world experience. Learn from professionals who've built successful careers in Development, Cybersecurity, and AI.</p>
+
+        <button className="view">View All Instructors</button>
+
       </div>
-    </section>
-
-    <div className="support">
-      <p >Say hi 👋🏻 ——— —  </p>
-      <h1>Our Supporting Trainers</h1>
-      <p ref={textRef1}
-      className="scroll-fill-text1" id="para"
-      style={{
-        backgroundSize: `${fillPercent1}% 100%`,
-      }}>M Tanveer Nandla began as a one-man army, but today, he leads a team of highly skilled students who’ve
-      <br/> mastered their respective micro skills.Meet our main trainers below and learn from the best in the industry.</p>
-      
-      <button className="view">View All</button>
-
-    </div>
     </>
   );
 };
