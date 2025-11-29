@@ -2,95 +2,47 @@ import React from "react";
 import "./Team.css";
 
 const Team = () => {
-  
-  return (
-   <div className="team-section">
-      {/* Left Side Members */}
-      <div className="left-members">
-        <div className="left-m1">
-        <div className="member">
-           <div className="info">
-            <h3>Aswad Baloch</h3>
-            <p>Director of iSkills Support</p>
-          </div>
-          <div className="img-circle purple">
-            <img src="https://iskills.com/wp-content/uploads/2024/04/aswad-without-bg.png" alt="Aswad Baloch" />
-          </div>
-        </div>
-        </div>
-        
-        <div className="left-m2">
-        <div className="member">
-           <div className="info">
-            <h3>Abid Rehman</h3>
-            <p>WordPress Trainer</p>
-          </div>
-          <div className="img-circle pink">
-            <img src="https://iskills.com/wp-content/uploads/2024/03/abid-banga.webp" alt="Abid Rehman" />
-          </div>
-          </div>
-        </div>
 
-        <div className="left-m3">
-        <div className="member">
-          <div className="info">
-            <h3>Faheem Akhtar</h3>
-            <p>Technical SEO Expert</p>
+  return (
+    <div className="team-section">
+      {/* Left Side - Javeria Javaid */}
+      <div className="left-members">
+        <div className="left-m2">
+          <div className="member">
+            <div className="info">
+              <h3>Javeria Javaid</h3>
+              <p>Full Stack Development Instructor</p>
+            </div>
+            <div className="img-circle pink">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300" alt="Javeria Javaid" />
+            </div>
           </div>
-          <div className="img-circle green">
-            <img src="https://iskills.com/wp-content/uploads/2024/04/Muhammad-Faheem-Akhtar.webp" alt="Faheem Akhtar" />
-          </div>
-        </div>
         </div>
       </div>
 
-      {/* Center (CEO) */}
-  
+      {/* Center (CEO) - Mustansar Riaz */}
+
       <div className="center-ceo">
         <div className="ceo-circle">
-          <img src="https://iskills.com/wp-content/uploads/2024/04/Tanveer-Nandla-1.webp" alt="Tanveer Nandla" />
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Mustansar Riaz" />
         </div>
-        <h2>Tanveer Nandla</h2>
-        <p>CEO iSkills</p>
+        <h2>Mustansar Riaz</h2>
+        <p>Founder & CEO | Cybersecurity Instructor</p>
       </div>
-  
 
-      {/* Right Side Members */}
+
+      {/* Right Side - Haseeb Akmal */}
       <div className="right-members">
-        <div className="right-m1">
-        <div className="member">
-          <div className="img-circle yellow">
-            <img src="https://iskills.com/wp-content/uploads/2024/04/Ammar.webp" alt="Ammar Ashfaq" />
-          </div>
-          <div className="info">
-            <h3>Ammar Ashfaq</h3>
-            <p>Content Writing Trainer</p>
-          </div>
-        </div>
-        </div>
-
         <div className="right-m2">
-        <div className="member">
-          <div className="img-circle sky">
-            <img src="https://iskills.com/wp-content/uploads/2024/04/KM.webp" alt="Khurram Malik" />
+          <div className="member">
+            <div className="img-circle sky">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300" alt="Haseeb Akmal" />
+            </div>
+            <div className="info">
+              <h3>Haseeb Akmal</h3>
+              <p>AI & Machine Learning Instructor</p>
+            </div>
           </div>
-          <div className="info">
-            <h3>Khurram Malik</h3>
-            <p>Freelance Trainer</p>
-          </div>
-        </div>
-        </div>
-
-        <div className="right-m3">
-        <div className="member">
-          <div className="img-circle purple">
-            <img src="https://iskills.com/wp-content/uploads/2024/04/Umair.webp" alt="Umair Shehzad" />
-          </div>
-          <div className="info">
-            <h3>Umair Shehzad</h3>
-            <p>Freelance Trainer</p>
-          </div>
-        </div>
         </div>
       </div>
     </div>

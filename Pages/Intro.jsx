@@ -7,21 +7,21 @@ const Intro = () => {
     <section className='intro-container'>
       <div className='intro'>
         <div className="intro-image">
-          <img src='https://iskills.com/wp-content/uploads/2024/04/tanveer-nandla-model.webp' alt="Tanveer Nandla" />
+          <img src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500' alt="Mustansar Riaz - CEO" />
         </div>
         <div className='intro-lines'>
-          <p className='section-subtitle'> Intro iSkills ——— — </p>
-          <h1>Welcome to iSkills</h1>
+          <p className='section-subtitle'> Intro ATechSkills ——— — </p>
+          <h1>Welcome to ATechSkills</h1>
           <p className='section-description'>
-            Established in 2017, <b>iSkills</b> is Pakistan’s leading online platform connecting learners with expert trainers in <b>AI, SEO, eCommerce,</b> and <b>Video Animation.</b>
-            Our mission? To empower beginners and professionals alike with practical, in-demand skills that unlock real opportunities.
+            Powered by <b>ATechSole</b>, Pakistan's leading software development company, <b>ATechSkills</b> is your gateway to mastering <b>Development, Cybersecurity,</b> and <b>Artificial Intelligence.</b>
+            Our mission? To empower beginners and professionals with practical, industry-relevant skills that unlock real career opportunities.
           </p>
           <p className='section-description'>
-            What sets <b>iSkills</b> apart is our <b>proven success</b> backed by data. Thousands of students have achieved measurable results through our trainings. The secret?
-            Our <b>24/7 support system,</b> ensuring you’re never left alone during challenging times.
+            What sets <b>ATechSkills</b> apart is our <b>expert-led training</b> backed by real-world experience. Led by <b>Mustansar Riaz</b>, Founder & CEO of ATechSole, our instructors bring years of industry expertise.
+            With <b>hands-on projects</b> and <b>24/7 support,</b> you're never alone on your learning journey.
           </p>
           <p className='section-description'>
-            Join the platform that delivers not just training but <b>success-driven learning</b>
+            Join the bootcamp that delivers not just training but <b>career transformation</b>
           </p>
         </div>
       </div>
@@ -29,53 +29,54 @@ const Intro = () => {
       {/*--- Courses section ---*/}
       <div className='courses-section'>
         <div className='about-course'>
-          <p className='section-subtitle'>Signature Courses ——— —</p>
-          <h1>SEBT – <span>SEO & Digital Marketing</span> Training<br className="desktop-only" /> by Tanveer Nandla</h1>
+          <p className='section-subtitle'>DEVSECAI Bootcamp ——— —</p>
+          <h1>Master <span>Development, Security & AI</span><br className="desktop-only" /> with Industry Experts</h1>
 
           <div className='trainer-profile'>
-            <img src='https://iskills.com/wp-content/uploads/2024/03/tanveer-nandla-profile-img.webp' alt="Trainer" />
+            <img src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200' alt="Trainer" />
             <div className='trainer-info'>
-              <h2>M Tanveer Nandla</h2>
-              <p>SEBT – Master Trainer. 16+ Years Experienced</p>
+              <h2>Mustansar Riaz</h2>
+              <p>Founder & CEO at ATechSole | Cybersecurity Expert | 10+ Years Experience</p>
             </div>
           </div>
 
           <p className='course-description'>
-            If you aspire to acquire a marketing skill that stands the test of time and is integral to an $80 billion industry, SEO is an undeniable focal point. When it comes to mastering SEO in Pakistan, there's no better guide than SEBT by Tanveer Nandla.
+            Master the three pillars of modern tech: Full Stack Development, Cybersecurity, and Artificial Intelligence.
+            Our DEVSECAI Bootcamp combines cutting-edge curriculum with hands-on projects, preparing you for high-demand careers in Pakistan's growing tech industry.
           </p>
 
           <div className='course-features'>
             <div className="feature-column">
-              <span><FaStar /> Niche Research</span>
-              <span><FaStar /> OnPage</span>
-              <span><FaStar /> WordPress</span>
-              <span><FaStar /> Content Writing</span>
-              <span><FaStar /> Technical SEO</span>
+              <span><FaStar /> Full Stack Development</span>
+              <span><FaStar /> React & Node.js</span>
+              <span><FaStar /> Database Design</span>
+              <span><FaStar /> API Development</span>
+              <span><FaStar /> Cloud Deployment</span>
             </div>
             <div className="feature-column">
-              <span><FaStar />Website Design</span>
-              <span><FaStar /> Content Coverage</span>
-              <span><FaStar /> OffPage</span>
-              <span><FaStar /> Freelancing</span>
+              <span><FaStar /> Cybersecurity Fundamentals</span>
+              <span><FaStar /> Network Security</span>
+              <span><FaStar /> AI & Machine Learning</span>
+              <span><FaStar /> Real-World Projects</span>
             </div>
           </div>
         </div>
 
         <div className='course-card'>
           <div className='card-image'>
-            <img src='https://iskills.com/wp-content/uploads/2024/03/signature-course-thumbnail.webp' alt="Course Thumbnail" />
+            <img src='https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600' alt="Bootcamp Thumbnail" />
           </div>
 
           <div className='card-details'>
             <div className='duration-row'>
               <img src='https://iskills.com/wp-content/uploads/2024/03/duration-icon.svg' alt="Duration" />
-              <p>Course Duration: 6 Months</p>
+              <p>Bootcamp Duration: 6 Months</p>
             </div>
 
             <div className='features-list'>
               <div className='feature-item'>
                 <img src='https://iskills.com/wp-content/uploads/2024/03/lcd.svg' alt="icon" />
-                <p>100+ Live Lectures</p>
+                <p>150+ Live Sessions</p>
               </div>
               <div className='feature-item'>
                 <img src='https://iskills.com/wp-content/uploads/2024/03/support.svg' alt="icon" />
@@ -83,11 +84,11 @@ const Intro = () => {
               </div>
               <div className='feature-item'>
                 <img src='https://iskills.com/wp-content/uploads/2024/03/artificial-intelligence.svg' alt="icon" />
-                <p>AI Support</p>
+                <p>AI-Powered Learning</p>
               </div>
               <div className='feature-item'>
                 <img src='https://iskills.com/wp-content/uploads/2024/03/reservation-smartphone.svg' alt="icon" />
-                <p>iOS/Android App Access</p>
+                <p>Mobile App Access</p>
               </div>
               <div className='feature-item'>
                 <img src='https://iskills.com/wp-content/uploads/2024/03/lifetime-access.svg' alt="icon" />
@@ -95,11 +96,11 @@ const Intro = () => {
               </div>
               <div className='feature-item'>
                 <img src='https://iskills.com/wp-content/uploads/2024/03/diploma.svg' alt="icon" />
-                <p>Certificate of Completion</p>
+                <p>Industry Certificate</p>
               </div>
               <div className='feature-item'>
                 <img src='https://iskills.com/wp-content/uploads/2024/03/money-bill-wave.svg' alt="icon" />
-                <p>15 Days Refund Policy</p>
+                <p>15 Days Money Back</p>
               </div>
             </div>
 
