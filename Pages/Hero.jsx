@@ -3,39 +3,38 @@ import './Hero.css'
 import { Link } from "react-router-dom";
 
 
-function Hero () {
- 
+function Hero() {
+
   return (
     <div className="hero-section">
-    <video
-    autoPlay
-    loop
-    muted
-    playsInline
-    className="hero-video">
-       <source src="https://cdn.pixabay.com/video/2024/02/02/198901-909564558_large.mp4" type="video/mp4" />
-    </video>
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="hero-video">
+        <source src="https://cdn.pixabay.com/video/2024/02/02/198901-909564558_large.mp4" type="video/mp4" />
+      </video>
 
-        <div className="overlay"></div>
-        
-        <div className="hero-content">
-          <h2>Learn</h2>
-          <h1>
-            <img src="https://cdn-icons-png.flaticon.com/128/18905/18905599.png"/>
-            A.I. Driven Digital Marketing <br /> Skills in  <span>Pakistan</span>
-             
-          </h1>
-         
-          <p>
-            Learn A.I., SEO, Blogging, eCommerce, video animation and other in-demand
-            Digital Marketing skills online in Pakistan – iSkills.
-          </p>
-          <div className="hero-buttons">
-            <button className="btn-primary"><Link to="/Courses"> iSkills Courses</Link></button>
-            <button className="btn-outline">Get in Touch</button>
-          </div>
+      <div className="overlay"></div>
+
+      <div className="hero-content">
+        <h2>LEARN</h2>
+        <h1>
+          <img src="https://cdn-icons-png.flaticon.com/128/18905/18905599.png" alt="icon" />
+          Master Development, Security & AI <br /> in <span>Pakistan</span>
+        </h1>
+
+        <p>
+          Join ATechSole's DEVSECAI Bootcamp - Learn Full Stack Development,
+          Cybersecurity, and Artificial Intelligence from industry experts.
+        </p>
+        <div className="hero-buttons">
+          <button className="btn-primary"><Link to="/Courses">Explore Bootcamp</Link></button>
+          <button className="btn-outline"><Link to="/Contact">Get in Touch</Link></button>
         </div>
       </div>
+    </div>
   )
 }
 
