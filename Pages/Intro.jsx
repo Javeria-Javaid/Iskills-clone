@@ -13,11 +13,11 @@ const Intro = () => {
           <p className='section-subtitle'> Intro ATechSkills ——— — </p>
           <h1>Welcome to ATechSkills</h1>
           <p className='section-description'>
-            Powered by <b>ATechSole</b>, Pakistan's leading software development company, <b>ATechSkills</b> is your gateway to mastering <b>Development, Cybersecurity,</b> and <b>Artificial Intelligence.</b>
+            <b>ATechSkills</b> is Pakistan's premier tech training platform, offering comprehensive bootcamps in <b>Development, Cybersecurity,</b> and <b>Artificial Intelligence.</b> Learn from industry experts and build a successful tech career.
             Our mission? To empower beginners and professionals with practical, industry-relevant skills that unlock real career opportunities.
           </p>
           <p className='section-description'>
-            What sets <b>ATechSkills</b> apart is our <b>expert-led training</b> backed by real-world experience. Led by <b>Mustansar Riaz</b>, Founder & CEO of ATechSole, our instructors bring years of industry expertise.
+            What sets <b>ATechSkills</b> apart is our <b>expert-led training</b> backed by real-world experience. Led by <b>Mustansar Riaz</b>, Founder & CEO of ATechSkills, our instructors bring years of industry expertise.
             With <b>hands-on projects</b> and <b>24/7 support,</b> you're never alone on your learning journey.
           </p>
           <p className='section-description'>
@@ -36,7 +36,7 @@ const Intro = () => {
             <img src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200' alt="Trainer" />
             <div className='trainer-info'>
               <h2>Mustansar Riaz</h2>
-              <p>Founder & CEO at ATechSole | Cybersecurity Expert | 10+ Years Experience</p>
+              <p>Founder & CEO at ATechSkills | Cybersecurity Expert | 10+ Years Experience</p>
             </div>
           </div>
 

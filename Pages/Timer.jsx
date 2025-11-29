@@ -137,12 +137,12 @@ const Timer = () => {
 
       <div className="support">
         <p >Meet Our Team 👋🏻 ——— —  </p>
-        <h1>Expert Instructors from ATechSole</h1>
+        <h1>Expert Instructors from ATechSkills</h1>
         <p ref={textRef1}
           className="scroll-fill-text1" id="para"
           style={{
             backgroundSize: `${fillPercent1}% 100%`,
-          }}>Founded by Mustansar Riaz, ATechSole has grown into a leading tech company. Our DEVSECAI Bootcamp is led by
+          }}>Founded by Mustansar Riaz, ATechSkills has grown into a leading tech training platform. Our DEVSECAI Bootcamp is led by
           <br /> industry experts who bring real-world experience. Learn from professionals who've built successful careers in Development, Cybersecurity, and AI.</p>
 
         <button className="view">View All Instructors</button>

@@ -118,7 +118,7 @@ const Training = () => {
       <div className="pro">
         <p className="firstP">DEVSECAI Bootcamp ——— —</p>
         <h1>Three Specialized Tracks</h1>
-        <p className="secondP">Choose your path in tech with ATechSkills' comprehensive bootcamp. Learn from industry experts at ATechSole<br />
+        <p className="secondP">Choose your path in tech with ATechSkills' comprehensive bootcamp. Learn from industry experts<br />
           and build a successful career in Development, Cybersecurity, or Artificial Intelligence.</p>
       </div>
       <Slider {...settings}>
@@ -156,7 +156,7 @@ const Training = () => {
               className="scroll-fill-text1"
               style={{
                 backgroundSize: `${fillPercent1}% 100%`,
-              }}>ATechSkills reflects my dedication as Founder & CEO of ATechSole to creating a supportive learning environment that empowers
+              }}>ATechSkills reflects my dedication as Founder & CEO to creating a supportive learning environment that empowers
               <br />students across Pakistan. Our goal is to build a transformative tech education system that leverages our
               <br /> expertise in software development, cybersecurity, and AI to help reduce youth unemployment in Pakistan.<br /></p>
           </div>
@@ -165,12 +165,12 @@ const Training = () => {
 
 
       <p id='introS'> Our Location ——— — </p>
-      <h1>ATechSole Training Center</h1><br />
+      <h1>ATechSkills Training Center</h1><br />
       <p ref={textRef0}
         className="scroll-fill-text1"
         style={{
           backgroundSize: `${fillPercent0}% 100%`,
-        }}>Based in Lahore, Punjab, ATechSole provides world-class technology training and software development services. Our DEVSECAI Bootcamp brings together
+        }}>Based in Lahore, Punjab, ATechSkills provides world-class technology training. Our DEVSECAI Bootcamp brings together
         <br />industry expertise and practical learning to prepare students for successful careers in Pakistan's growing tech industry.</p>
 
 
@@ -181,7 +181,7 @@ const Training = () => {
           <div className="icon-circle orange">
             <img src="https://iskills.com/wp-content/uploads/2024/03/multan.svg" alt="Lahore" />
           </div>
-          <h2>Lahore – ATechSole Headquarters</h2>
+          <h2>Lahore – ATechSkills Headquarters</h2>
           <div className="divider"></div>
           <ul>
             <li><FaPhone /> +92-XXX-XXXXXXX</li>

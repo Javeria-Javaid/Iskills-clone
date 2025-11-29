@@ -29,7 +29,7 @@ const Navbar = () => {
       {/* Main Navbar */}
       <div className="main-navbar">
         <div className="logo">
-          <span className="logo-text">ATechSole</span>
+          <span className="logo-text">ATechSkills</span>
         </div>
 
         <button className="menu-toggle" aria-label="Toggle menu" onClick={() => setMenuOpen(!menuOpen)}>

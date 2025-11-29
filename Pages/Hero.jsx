@@ -27,7 +27,7 @@ function Hero() {
 
         <p>
           Join ATechSkills' DEVSECAI Bootcamp - Learn Full Stack Development,
-          Cybersecurity, and Artificial Intelligence from industry experts at ATechSole.
+          Cybersecurity, and Artificial Intelligence from industry experts at ATechSkills.
         </p>
         <div className="hero-buttons">
           <button className="btn-primary"><Link to="/Courses">Explore Bootcamp</Link></button>

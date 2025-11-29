@@ -11,7 +11,7 @@ const statsData = [
 const StatsSection = () => {
   return (
     <section className="stats-section">
-      <h2 className="stats-heading">ATechSole's Track Record of Excellence</h2>
+      <h2 className="stats-heading">ATechSkills' Track Record of Excellence</h2>
       <div className="stats-container">
         {statsData.map((item, index) => (
           <div className="stat-box" key={index}>
