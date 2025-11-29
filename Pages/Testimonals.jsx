@@ -5,43 +5,43 @@ import { FaChevronLeft, FaChevronRight, FaQuoteLeft, FaQuoteRight } from "react-
 const testimonials = [
   {
     id: 1,
-    name: "Faisal Fateh Khan",
-    earned: "–",
-    source: "Blogging",
-    image: "https://iskills.com/wp-content/uploads/2025/01/Faisal-Fateh-Khan.jpg",
-    text: "Faisal Fateh Khan, a student from the SEBT-7 batch at iSkills Pakistan, has achieved outstanding success with the guidance and mentorship provided by the team.",
+    name: "Ahmed Hassan",
+    earned: "PKR 150,000/month",
+    source: "Full Stack Development",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200",
+    text: "ATechSkills' DEVSECAI Bootcamp transformed my career. The hands-on projects and expert guidance from Javeria helped me land a full-stack developer role at a leading tech company in Lahore.",
   },
   {
     id: 2,
-    name: "Syed Shaban Gillani",
-    earned: "-",
-    source: "Freelancing",
-    image: "https://iskills.com/wp-content/uploads/2025/01/83059302_1779673302175865_3713603205263515712_n.jpg",
-    text: " Syed Shaban Gillani built her freelancing career through iSkills mentorship and now earns consistently from international clients.",
+    name: "Fatima Ali",
+    earned: "PKR 180,000/month",
+    source: "Cybersecurity",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200",
+    text: "Learning cybersecurity from Mustansar Riaz was incredible. His real-world experience and practical approach helped me secure a position as a Security Analyst. ATechSkills changed my life!",
   },
   {
     id: 3,
-    name: "Imran Ahmed",
-    earned: "-",
-    source: "Blogging",
-    image: "https://iskills.com/wp-content/uploads/2025/01/441507169_10229500861979312_594136384836286616_n-1.webp",
-    text: "Imran Ahmed, a student of iSkills pakistan in the SEBT batch, has acheived remarkable success under tthe guidance of..",
+    name: "Bilal Khan",
+    earned: "PKR 200,000/month",
+    source: "AI & Machine Learning",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200",
+    text: "The AI track with Haseeb Akmal was outstanding. I learned everything from basics to advanced deep learning. Now I'm working as an AI Engineer, building intelligent solutions for businesses.",
   },
   {
     id: 4,
-    name: "Hamza Jahangir",
-    earned: "-",
-    source: "Freelancing",
-    image: "https://iskills.com/wp-content/uploads/2025/01/53d40229-09e9-437b-860b-d533db32d89f.jpeg",
-    text: "Imran Ahmed, a briliant student of iSkills pakistan in the SEBT batch, mentored byy Tanveer Nadla, has achieved remarkable success ..",
+    name: "Sara Malik",
+    earned: "PKR 120,000/month",
+    source: "Full Stack Development",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200",
+    text: "ATechSkills provided the perfect environment to learn. The 24/7 support and lifetime access to course materials helped me master React and Node.js. Highly recommended!",
   },
   {
     id: 5,
-    name: "Hamza yaseen ",
-    earned: "-",
-    source: "Drop-shipping",
-    image: "https://iskills.com/wp-content/uploads/2025/01/459572829_2225907071122221_1930914950131812498_n.jpg",
-    text: "Hamza, a student of iSkills pakistan in the SEBT batch, has acheived remarkable success under tthe guidance of..",
+    name: "Usman Tariq",
+    earned: "PKR 160,000/month",
+    source: "Cybersecurity",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200",
+    text: "The DEVSECAI Bootcamp's cybersecurity track gave me practical skills I use every day. Mustansar's teaching style and industry insights are invaluable. Best investment in my career!",
   }
 ];
 
@@ -79,8 +79,8 @@ const Testimonials = () => {
                 <img src={t.image} alt={t.name} className="profile-img" />
                 <div className="profile-info">
                   <h3>{t.name}</h3>
-                  <p>Earned: <span>{t.earned}</span></p>
-                  <p>Source: {t.source}</p>
+                  <p>Earning: <span>{t.earned}</span></p>
+                  <p>Track: {t.source}</p>
                 </div>
               </div>
 
