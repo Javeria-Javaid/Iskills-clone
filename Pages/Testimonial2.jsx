@@ -48,9 +48,8 @@ const testimonials = [
 
 
 const Testimonial2 = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Ensure these functions are declared BEFORE they are used in JSX
   const prevSlide = () => {
     setCurrentIndex((prev) =>
       prev === 0 ? testimonials.length - 1 : prev - 1
@@ -63,49 +62,49 @@ const Testimonial2 = () => {
     );
   };
   return (
-        <div className="female-testimonial">
+    <div className="female-testimonial">
       <div className="about-female">
-       <p id='about-F'> iSkills Shines ✨ ——— — </p>
-             <h1>Celebrating Our Female Stars' Wins!</h1><br/>
-             <p id='aboutF-P'>Anas ibn Malik reported: The Messenger of Allah, PBUH, said, “Seeking knowledge is an obligation upon every Muslim (Men & Women).” Sunan Ibn Mājah 224 </p>
+        <p id='about-F'> iSkills Shines ✨ ——— — </p>
+        <h1>Celebrating Our Female Stars' Wins!</h1>
+        <p id='aboutF-P'>Anas ibn Malik reported: The Messenger of Allah, PBUH, said, “Seeking knowledge is an obligation upon every Muslim (Men & Women).” Sunan Ibn Mājah 224 </p>
       </div>
-    <div className="testimonial-container">
-      <button className="arrow1 left" onClick={prevSlide}>
-        <FaChevronLeft />
-      </button>
+      <div className="testimonial-container">
+        <button className="arrow1 left" onClick={prevSlide} aria-label="Previous testimonial">
+          <FaChevronLeft />
+        </button>
 
-      <div className="testimonial-slider">
-        <div
-          className="testimonial-track"
-          style={{
-            transform: `translateX(-${currentIndex * 100}%)`,
-          }}
-        >
-          {testimonials.map((t) => (
-            <div className="testimonial-card" key={t.id}>
-              <div className="profile-section">
-                <img src={t.image} alt={t.name} className="profile-img" />
-                <div className="profile-info">
-                  <h3>{t.name}</h3>
-                  <p>Earned: <span>{t.earned}</span></p>
-                  <p>Source: {t.source}</p>
+        <div className="testimonial-slider">
+          <div
+            className="testimonial-track"
+            style={{
+              transform: `translateX(-${currentIndex * 100}%)`,
+            }}
+          >
+            {testimonials.map((t) => (
+              <div className="testimonial-card" key={t.id}>
+                <div className="profile-section">
+                  <img src={t.image} alt={t.name} className="profile-img" />
+                  <div className="profile-info">
+                    <h3>{t.name}</h3>
+                    <p>Earned: <span>{t.earned}</span></p>
+                    <p>Source: {t.source}</p>
+                  </div>
+                </div>
+
+                <div className="quote-section">
+                  <FaQuoteLeft className="quote-icon left-quote" />
+                  <p>{t.text}</p>
+                  <FaQuoteRight className="quote-icon right-quote" />
                 </div>
               </div>
-
-              <div className="quote-section">
-                <FaQuoteLeft className="quote-icon left-quote" />
-                <p>{t.text}</p>
-                <FaQuoteRight className="quote-icon right-quote" />
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
 
-      <button className="arrow1 right" onClick={nextSlide}>
-        <FaChevronRight />
-      </button>
-    </div>
+        <button className="arrow1 right" onClick={nextSlide} aria-label="Next testimonial">
+          <FaChevronRight />
+        </button>
+      </div>
     </div>
   )
 }

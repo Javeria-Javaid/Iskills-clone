@@ -1,98 +1,108 @@
-
-.Sebt-container{
-    margin-top: 120px;
-    margin-left: 50px;
+.Sebt-container {
+  margin-top: 120px;
+  padding: 0 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .faq-containers {
-  width: 100%;
+  width: 90%;
   max-width: 1000px;
   margin: 50px auto;
   font-family: "Inter", sans-serif;
   margin-bottom: 100px;
 }
 
- #batch{
-    color: rgb(255, 115, 0);
+#batch {
+  color: rgb(255, 115, 0);
 }
 
-.rating{
-    display: flex;
-    gap: 10px;
-    margin-top: 15px;
+.Sebt-container h1 {
+  font-size: clamp(24px, 4vw, 42px);
+  line-height: 1.3;
+  margin-bottom: 20px;
 }
 
-.rating p{
-    font-size: 15px;
-    font-weight: 600;
+.rating {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.rating span{
-    font-size: small;
-    font-weight: 600;
-    opacity: 0.5;
-    padding-left: 2px;
+.rating img {
+  width: 20px;
+  height: 20px;
 }
 
-.hero-both{
-    display: flex;
-    gap: 40px;
-    height: 350px;
+.rating p {
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
-.white-div1{
-    margin-top: 20px;
-    height: 430px;
-    width: 30%;
-    background-color: white;
-    border-radius: 20px;
+.rating span {
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.5;
 }
-#rs{
-    font-weight: 700;
-    font-size: 32px;
-    padding: 15px 0 0 15px;
+
+.hero-both {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.white-div1 {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+#rs {
+  font-weight: 700;
+  font-size: 32px;
+  color: #6a00ff;
+  margin-bottom: 15px;
+}
+
+.hero-bg,
+.hero-Dbg,
+.hero-CSbg {
+  flex: 2;
+  min-width: 300px;
+  height: 400px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .hero-bg {
-  width: 62%;
-  height: 60vh;
-  margin-top: 20px;
-  border-radius: 20px;
-  background-image: url("https://media.istockphoto.com/id/2197955227/photo/humans-are-using-laptops-and-computers-to-interact-with-ai-helping-them-create-code-train-ai.webp?a=1&b=1&s=612x612&w=0&k=20&c=p8GsIZS4sS58ubkyslWk6ChVyDe5S4HDwxxznIsm-v4="); 
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  background-image: url("https://media.istockphoto.com/id/2197955227/photo/humans-are-using-laptops-and-computers-to-interact-with-ai-helping-them-create-code-train-ai.webp?a=1&b=1&s=612x612&w=0&k=20&c=p8GsIZS4sS58ubkyslWk6ChVyDe5S4HDwxxznIsm-v4=");
 }
 
 .hero-Dbg {
-  width: 62%;
-  height: 60vh;
-  margin-top: 20px;
-  border-radius: 20px;
-  background-image: url("https://www.simplilearn.com/ice9/free_resources_article_thumb/is_web_development_good_career.jpg"); 
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  background-image: url("https://www.simplilearn.com/ice9/free_resources_article_thumb/is_web_development_good_career.jpg");
 }
+
 .hero-CSbg {
-  width: 62%;
-  height: 60vh;
-  margin-top: 20px;
-  border-radius: 20px;
-  background-image: url("https://media.istockphoto.com/id/1350595566/photo/cyber-security-firewall-interface-protection-concept-businesswoman-protecting-herself-from.jpg?s=612x612&w=0&k=20&c=9i4-mWszc5FRU_iaI3ISHkmJKHn1ZCfhWjechO4H9NY="); 
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  background-image: url("https://media.istockphoto.com/id/1350595566/photo/cyber-security-firewall-interface-protection-concept-businesswoman-protecting-herself-from.jpg?s=612x612&w=0&k=20&c=9i4-mWszc5FRU_iaI3ISHkmJKHn1ZCfhWjechO4H9NY=");
 }
+
 .close {
   position: absolute;
   top: -40px;
@@ -102,57 +112,76 @@
   cursor: pointer;
 }
 
-#training-program{
-    font-size: 15px;
-    line-height: 1.2rem;
-    color: #011a35;
+#training-program {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #011a35;
+  margin: 30px 0;
+  max-width: 900px;
 }
 
-#training{
-    font-size: 22px;
-    font-weight: 600;
-    padding-top: 10px;
+.firstP {
+  color: #6b0af3;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 30px 0 15px;
+}
+
+#training {
+  font-size: clamp(20px, 3vw, 24px);
+  font-weight: 600;
+  margin: 20px 0;
 }
 
 /*--- 4-tab Layout---*/
-
 .container {
   padding-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .tabs {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   border-bottom: 2px solid #d8c9ff;
+  flex-wrap: wrap;
+  overflow-x: auto;
 }
 
 .tabs button {
   background: transparent;
   border: none;
   font-size: 15px;
-  padding: 10px;
+  padding: 12px 20px;
   cursor: pointer;
-  color: black;
+  color: #333;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
 }
 
 .tabs button.active {
   color: #7a32ff;
-  border-bottom: 1px solid #7a32ff;
+  border-bottom-color: #7a32ff;
+  font-weight: 600;
+}
+
+.tabs button:hover {
+  color: #7a32ff;
 }
 
 .tab-content {
   margin-top: 30px;
 }
 
-.content-box{
-    margin-left: 30px;
-    width: 90%;
+.content-box {
+  width: 100%;
+  max-width: 900px;
 }
 
 .content-box h2 {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: #1e1e1e;
+  font-size: clamp(20px, 3vw, 26px);
 }
 
 ul {
@@ -162,22 +191,22 @@ ul {
 
 li {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 12px 0;
-  line-height: 1.5;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 15px 0;
+  line-height: 1.6;
 }
 
-
 .star {
-  margin-top:3px;
-  width: 16px;
-  height: 16px;
+  margin-top: 3px;
+  width: 18px;
+  height: 18px;
   background: rgb(255, 153, 0);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .star::before {
@@ -192,7 +221,7 @@ li {
   align-items: center;
   padding: 18px 22px;
   color: #111827;
-  font-size: small;
+  font-size: 15px;
   font-weight: 600;
 }
 
@@ -204,14 +233,13 @@ li {
 }
 
 .faq-answers p {
-  font-size: 10px;
+  font-size: 14px;
   line-height: 1.6;
   margin: 15px 0;
-  justify-content: left;
-  
 }
+
 .scroll-fill-textt {
-  font-size: 30px;
+  font-size: clamp(24px, 4vw, 36px);
   font-weight: 700;
   text-align: center;
   color: transparent;
@@ -222,73 +250,179 @@ li {
   background-clip: text;
   transition: background-size 1.8s cubic-bezier(0.5, 1, 0.5, 1);
   will-change: background-size;
-  animation: gradientMove 10s infinite linear;
+  margin: 40px 0;
 }
 
-.white-faq{
-    margin-left: 30%;
-    margin-top: 20px;
-    background-color:#ffff;
-    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    color: black;
-    width: 32%;
-    height: 400px;
+.scroll-fill-text1 {
+  font-size: clamp(16px, 2vw, 18px);
+  line-height: 1.8;
+  text-align: center;
+  max-width: 900px;
+  margin: 30px auto;
+  color: #333;
 }
 
-.white-faq h2{
-    padding: 20px 0 5px 0;
-    text-align: center;
+#para {
+  padding: 0 20px;
 }
 
-#price{
-    text-align: center;
-    font-weight: 600;
+.white-faq {
+  margin: 40px auto;
+  background-color: #ffff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  color: black;
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
 }
 
-#div-p{
-    font-size: medium;
-    font-weight: 600;
-    line-height: 3rem;
-    padding: 10px 0 0 25px;
-}
-.stories{
-    text-align: left;
-    margin-right: 5px;
-
+.white-faq h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: clamp(22px, 3vw, 28px);
 }
 
-.images{
-    display: flex;
-    flex-wrap: wrap;
-   gap: 2rem;
-   margin-left: 50px;
-  
+#price {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  color: #6a00ff;
+  margin: 15px 0;
 }
 
-.images img{
-    width: 450px;
-    height: 450px;
-    
+#div-p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 2;
+  margin: 20px 0;
 }
-.enrolll{
- background:linear-gradient(to right,#9051e7,#7317f4);
+
+.stories {
+  text-align: left;
+  margin: 40px 0;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.images img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.enrolll {
+  background: linear-gradient(to right, #9051e7, #7317f4);
   color: white;
   border: none;
-  padding: 10px 22px;
-  border-radius: 6px;
+  padding: 12px 30px;
+  border-radius: 50px;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 16px;
   cursor: pointer;
-  width: 15%;
-  height: 40px;
-  margin-left: 20px;
-  margin-top: 10px;
-  transition: background 0.4s ease;
-
+  width: 100%;
+  max-width: 250px;
+  display: block;
+  margin: 20px auto;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(115, 23, 244, 0.3);
 }
 
 .enrolll:hover {
-  background:linear-gradient(to right,#7317f4,#9051e7);
+  background: linear-gradient(to right, #7317f4, #9051e7);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(115, 23, 244, 0.4);
 }
 
+.regis {
+  text-align: center;
+  margin: 50px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .Sebt-container {
+    margin-top: 100px;
+  }
+
+  .hero-both {
+    flex-direction: column-reverse;
+  }
+
+  .hero-bg,
+  .hero-Dbg,
+  .hero-CSbg {
+    height: 300px;
+  }
+
+  .white-div1 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .Sebt-container {
+    margin-top: 80px;
+    padding: 0 15px;
+  }
+
+  .rating {
+    gap: 10px;
+  }
+
+  .rating p {
+    font-size: 13px;
+  }
+
+  .tabs {
+    gap: 10px;
+  }
+
+  .tabs button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .hero-bg,
+  .hero-Dbg,
+  .hero-CSbg {
+    height: 250px;
+  }
+
+  .images img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Sebt-container {
+    margin-top: 70px;
+  }
+
+  #rs {
+    font-size: 28px;
+  }
+
+  .tabs {
+    flex-direction: column;
+    border-bottom: none;
+  }
+
+  .tabs button {
+    border-bottom: 1px solid #d8c9ff;
+    border-radius: 8px;
+    margin-bottom: 5px;
+  }
+
+  .tabs button.active {
+    background: #f5f0ff;
+  }
+}

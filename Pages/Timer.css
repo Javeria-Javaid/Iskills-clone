@@ -1,19 +1,21 @@
-
-.regis{
+.regis {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 30px;
+  padding: 0 20px;
 }
-.regis p{
-  color:#6B0AF3;
-  font-size: 30px;
+
+.regis p {
+  color: #6B0AF3;
+  font-size: clamp(20px, 4vw, 30px);
   font-weight: 600;
   padding-top: 10px;
 }
+
 .timer-section {
-  background:linear-gradient(to right,#7317f4,#9051e7);
+  background: linear-gradient(to right, #7317f4, #9051e7);
   color: white;
-  padding: 80px 20px;
+  padding: 60px 20px;
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
@@ -22,7 +24,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -30,86 +32,97 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 80px;
+  min-width: 70px;
 }
 
 .time-box h4 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  font-size: 1rem;
+  margin-bottom: 5px;
   font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .time-box span {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 700;
 }
 
 .colon {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.support{
-  height: 250px;
+.support {
+  padding: 40px 20px;
   text-align: center;
   background-color: white;
 }
-.support p{
+
+.support p {
   color: #6B0AF3;
   font-weight: 600;
-  padding-top: 30px;
+  font-size: 18px;
+  margin-bottom: 15px;
 }
-.support #para{
+
+.support #para {
   color: black;
   font-weight: 300;
-  line-height: 1.5;
-
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.Courses{
-  height: 250px;
+.Courses {
+  padding: 40px 20px;
   background-color: white;
 }
-.Courses p{
+
+.Courses p {
   color: #6B0AF3;
   font-weight: 600;
-  padding-top: 30px;
-  margin-left: 30px;
+  margin-bottom: 10px;
 }
-.Courses h1{
-  margin-left: 30px;
+
+.Courses h1 {
+  font-size: clamp(24px, 4vw, 36px);
+  margin-bottom: 20px;
+  color: #333;
 }
-#crs{
-  text-align: start;
+
+#crs {
+  text-align: left;
   color: black;
   font-weight: 300;
-  line-height: 1.5;
-
+  line-height: 1.6;
+  max-width: 800px;
 }
 
 .view {
- background:#e8dff6;
- align-content: center;
+  background: #e8dff6;
   color: #6b0af3;
   border: none;
-  margin-top: 15px;
-  width:13%;
-  height: 40px;
+  margin-top: 20px;
   font-size: 15px;
-  padding: 10px 22px;
+  padding: 12px 30px;
   border-radius: 6px;
   font-weight: 600;
   cursor: pointer;
-  transition:color 0.4s ease;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
 .view:hover {
-  background:linear-gradient(to right,#7317f4,#9051e7);
+  background: linear-gradient(to right, #7317f4, #9051e7);
   color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(115, 23, 244, 0.3);
 }
 
 .scroll-fill-text {
-  font-size: 50px;
+  font-size: clamp(32px, 6vw, 50px);
   font-weight: 700;
   text-align: center;
   color: transparent;
@@ -121,57 +134,64 @@
   transition: background-size 1.8s cubic-bezier(0.5, 1, 0.5, 1);
   will-change: background-size;
   animation: gradientMove 10s infinite linear;
+  margin-bottom: 20px;
 }
+
 .scroll-fill-text1 {
-  font-size: 15px;
-  font-weight: 200;
+  font-size: 16px;
+  font-weight: 300;
   text-align: center;
-
-  line-height: 1.5;
-  /* gradient color that fills */
-  background-image: linear-gradient(90deg, #000000, #000000);
-  background-repeat: no-repeat;
-  background-size: 0% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: rgba(0, 0, 0, 0.15); /* light grey text base */
-  transition: background-size 4s ease-out;
-  will-change: background-size;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
 }
-
 
 .drop-text {
-  font-size: 80px;
+  font-size: clamp(40px, 8vw, 80px);
   font-weight: 900;
   text-align: center;
   opacity: 0;
-  transform: translateY(-250px); /* start from above */
-  transition: all 0.2s cubic-bezier(1, 1, 1, 1);
+  transform: translateY(-50px);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   color: transparent;
   background-image: linear-gradient(90deg, #ff00aa, #7a00ff);
   background-clip: text;
   -webkit-background-clip: text;
+  margin-bottom: 30px;
 }
 
-/* When visible on scroll */
 .drop-text.visible {
   opacity: 1;
-  transform: translateY(0); /* move to final position */
-  background-size: 100% 100%;
+  transform: translateY(0);
 }
 
-
-/* Optional: Gradient slowly moves (animated color flow) */
 @keyframes gradientMove {
   0% {
     background-position: 0% 100%;
   }
+
   100% {
     background-position: 50% 100%;
   }
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .timer-container {
+    gap: 10px;
+  }
 
+  .time-box {
+    min-width: 60px;
+  }
 
+  .Courses,
+  .support {
+    text-align: center;
+  }
 
+  #crs {
+    text-align: center;
+  }
+}

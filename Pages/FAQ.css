@@ -1,5 +1,5 @@
 .faq-container {
-  width: 100%;
+  width: 90%;
   max-width: 1000px;
   margin: 50px auto;
   font-family: "Inter", sans-serif;
@@ -7,10 +7,14 @@
   margin-bottom: 100px;
 }
 
-#introo{
-    margin-bottom: 30px;
-    font-size: 15px;
-    line-height: 20px;
+#introo {
+  margin-bottom: 30px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .faq-item {
@@ -22,6 +26,7 @@
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+  text-align: left;
 }
 
 .faq-item.active {
@@ -41,14 +46,17 @@
 
 .faq-question h3 {
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
+  flex: 1;
+  padding-right: 10px;
 }
 
 .arrow-icon {
   color: #8b4bff;
   font-size: 16px;
   transition: transform 0.3s ease;
+  flex-shrink: 0;
 }
 
 .faq-item.active .arrow-icon {
@@ -66,83 +74,117 @@
   font-size: 15px;
   line-height: 1.6;
   margin: 15px 0;
-  
 }
 
-.enroll{
- background:linear-gradient(to right,#9051e7,#7317f4);
+.enroll {
+  background: linear-gradient(to right, #9051e7, #7317f4);
   color: white;
   border: none;
-  padding: 10px 22px;
+  padding: 12px 30px;
   border-radius: 6px;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 16px;
   cursor: pointer;
-  width: 25%;
-  height: 40px;
-  margin-left: 20px;
-  margin-top: 10px;
+  min-width: 200px;
+  margin-top: 20px;
   transition: background 0.4s ease;
-
+  display: inline-block;
 }
 
 .enroll:hover {
-  background:linear-gradient(to right,#7317f4,#9051e7);
+  background: linear-gradient(to right, #7317f4, #9051e7);
+  transform: translateY(-2px);
 }
+
 .course-slider1 {
   margin: 30px auto;
   width: 100%;
 }
 
 .course-image1 img {
-  width:40%;
-  height: 150px;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
   margin-top: 10px;
-  object-fit: cover;
-  
+  object-fit: contain;
 }
 
-.media{
-    background-color: white;
-    text-align: center;
-    height: 600px;
-    padding-top: 5px;
-    
+.media {
+  background-color: white;
+  text-align: center;
+  padding: 60px 20px;
 }
 
-.media h1{
-  padding-top: 5px;
+.media h1 {
+  margin-bottom: 20px;
+  font-size: clamp(24px, 4vw, 36px);
 }
-.inTouch{
-   background:linear-gradient(to left,#9051e7,#7317f4);
-   color: white;
-   padding-top: 40px;
-   height: 400px;
 
-   
+.inTouch {
+  background: linear-gradient(to left, #9051e7, #7317f4);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
 }
-.cont{
+
+.cont {
   display: flex;
-  gap: 1rem;
+  gap: 20px;
   justify-content: center;
-  padding-top: 3%;
-  
+  padding-top: 30px;
+  flex-wrap: wrap;
 }
-.msg{
+
+.msg {
   display: flex;
+  align-items: center;
   color: black;
   background-color: white;
-  padding: 10px 10px 10px 10px;
+  padding: 15px;
   border-radius: 10px;
-  height: 60px;
-  width: 20%;
-}
-.msg img{
-  width: 40px;
+  min-width: 200px;
+  flex: 1;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.msg p{
-  padding: 10px 0 0 10px;
+.msg:hover {
+  transform: translateY(-5px);
+}
+
+.msg img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.msg p {
+  padding-left: 15px;
   font-weight: 600;
-  font: 10px;
+  font-size: 14px;
+  margin: 0;
+  text-align: left;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faq-container {
+    width: 95%;
+    margin-bottom: 60px;
+  }
+
+  .cont {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .msg {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .enroll {
+    width: 100%;
+  }
 }

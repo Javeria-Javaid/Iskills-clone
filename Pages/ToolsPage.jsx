@@ -36,36 +36,41 @@ const ToolsPage = () => {
 
       <div className="seo-header">
 
-      <h1 className="heading">iSkills SEO Tools</h1>
+        <h1 className="heading">iSkills SEO Tools</h1>
 
-      <p className="sub">
-        Explore our suite of SEO tools designed to enhance your digital marketing efforts.
-      </p>
+        <p className="sub">
+          Explore our suite of SEO tools designed to enhance your digital marketing efforts.
+        </p>
 
-      <div className="search-bar">
-        <span className="icon">🔍︎</span>
-        <input type="text" placeholder="Search your query!" />
+        <div className="search-bar">
+          <span className="icon">🔍︎</span>
+          <input
+            type="text"
+            placeholder="Search your query!"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+        </div>
+
       </div>
 
-    </div>
-    
       <div className="buttons">
-        <button 
-          className={activeCategory === "seo" ? "active" : ""} 
+        <button
+          className={activeCategory === "seo" ? "active" : ""}
           onClick={() => setActiveCategory("seo")}
         >
           All SEO Tools
         </button>
 
-        <button 
-          className={activeCategory === "uncategorized" ? "active" : ""} 
+        <button
+          className={activeCategory === "uncategorized" ? "active" : ""}
           onClick={() => setActiveCategory("uncategorized")}
         >
           Uncategorized
         </button>
 
-        <button 
-          className={activeCategory === "writing" ? "active" : ""} 
+        <button
+          className={activeCategory === "writing" ? "active" : ""}
           onClick={() => setActiveCategory("writing")}
         >
           Writing Tools
@@ -74,21 +79,23 @@ const ToolsPage = () => {
 
       {/* TOOL CARDS */}
       <div className="tools-grid">
-        {toolsData[activeCategory].map((tool) => (
+        {filteredTools.map((tool) => (
           <div key={tool.id} className="card">
-             <img src={tool.img} className="card-img" alt="tool" />
-           
-             <p className="card-title">{tool.title}</p>
+            <img src={tool.img} className="card-img" alt="tool" />
+
+            <p className="card-title">{tool.title}</p>
           </div>
         ))}
-         
+
       </div>
-         
-        <h1>Looking for a specific tool?</h1><br/>
+
+      <div className="contact-section">
+        <h1>Looking for a specific tool?</h1>
         <p className="subb">If you are looking for a specific tool with functionalities, Write to us now, we will try our best to facilitate your request.</p>
         <button className="contact-btn">Contact Now</button>
+      </div>
 
-        <Footer/>
+      <Footer />
 
     </div>
   );

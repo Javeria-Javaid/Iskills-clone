@@ -11,20 +11,20 @@ import Development from './Pages/Development.jsx'
 import Enroll from './Pages/Enroll.jsx'
 import Courses from './Pages/Courses.jsx'
 import Index from './Index.jsx'
-import { Routes, Route,} from "react-router-dom";
+import { Routes, Route, } from "react-router-dom";
 
 
 function App() {
-  
+
   return (
     <div>
 
-      <Navbar />hh
-      <Index/>
-      
-      
-       <Routes>
-     
+      <Navbar />
+      <Index />
+
+
+      <Routes>
+
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/ToolsPage" element={<ToolsPage />} />
@@ -38,11 +38,11 @@ function App() {
         <Route path="/Enroll" element={<Enroll />} />
       </Routes>
 
-      
+
     </div>
 
-   
-    
+
+
   )
 }
 

@@ -1,42 +1,46 @@
 .team-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background: white;
-  padding: 60px 40px;
-  font-family: "Poppins", sans-serif; 
-  height: 500px;
+  padding: 80px 20px;
+  font-family: "Poppins", sans-serif;
+  min-height: 600px;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 /* Left and right column styles */
-.left-members
- {
+.left-members,
+.right-members {
   display: flex;
   flex-direction: column;
-  height: 600px;
-  margin-left: 10%;
+  gap: 30px;
+  flex: 1;
+  max-width: 350px;
 }
-.right-members{
-  display: flex;
-  margin-bottom:20% ;
-  flex-direction: column;
-  width: 30%;
-  height: 500px;
-  margin-right: 5%;
-  
+
+.left-members {
+  align-items: flex-end;
+}
+
+.right-members {
+  align-items: flex-start;
 }
 
 /* Center (CEO) */
-
 .center-ceo {
   text-align: center;
   position: relative;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
 }
 
 .ceo-circle {
-  width: 290px;
-  height: 290px;
+  width: 280px;
+  height: 280px;
   background: #ff7b00;
   border-radius: 50%;
   overflow: hidden;
@@ -45,13 +49,13 @@
   align-items: center;
   border: 6px solid #fff;
   box-shadow: 0 0 0 8px #e5dcff;
-  
+  margin-bottom: 20px;
 }
 
 .ceo-circle img {
-  width: 290px;
-  border-radius: 50%;
-  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .center-ceo h2 {
@@ -66,69 +70,60 @@
 }
 
 /* Member card */
-
 .member {
   display: flex;
   align-items: center;
-  margin: 25px 0;
+  gap: 15px;
+  width: 100%;
+}
+
+.left-members .member {
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.right-members .member {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  text-align: left;
 }
 
 .member .info {
-  margin-right: 15px;
+  flex: 1;
 }
 
 .member h3 {
   margin: 0;
-  font-size:15px;
+  font-size: 16px;
   color: #0b1b40;
   font-weight: 700;
 }
 
 .member p {
-  font-size: 12px;
-  color: #333;
+  font-size: 13px;
+  color: #555;
+  margin-top: 4px;
 }
-
 
 /* Image circles */
 .img-circle {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin-right: 10px;
+  flex-shrink: 0;
+  border: 3px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .img-circle img {
-  margin-top: 20px;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 50%;
-}
-
-.left-m1{
-  padding-top: 18%;
-  margin-left: 10%;
-}
-
-.left-m3{
-  margin-left: 10%;
-}
-
-.right-m1{
-  margin-top: 30%;
-  margin-right: 10%;
-}
-
-.right-m2{
-  margin-left: 10%;
-}
-
-.right-m3{
-  margin-right: 30%;
 }
 
 /* Color backgrounds */
@@ -152,26 +147,30 @@
   background: #c7eeff;
 }
 
-
 /* Responsive */
 @media (max-width: 1024px) {
   .team-section {
     flex-direction: column;
-    align-items: center;
+    padding: 60px 20px;
+    gap: 60px;
   }
+
   .left-members,
   .right-members {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: auto;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
   }
-  .member {
+
+  .left-members .member,
+  .right-members .member {
     flex-direction: column;
     text-align: center;
-    margin: 20px;
+    justify-content: center;
   }
-  .member .info {
-    margin-left: 0;
+
+  .center-ceo {
+    order: -1;
+    /* CEO on top */
   }
 }

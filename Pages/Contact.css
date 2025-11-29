@@ -6,42 +6,45 @@ body {
 .contact-container {
   position: relative;
   width: 100%;
- 
   margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-bottom: 100px;
 }
 
 /* Polygon background */
 .polygon-bg {
   margin-top: 100px;
   width: 90%;
-  height: 500px;
+  min-height: 500px;
   background: linear-gradient(135deg, #7b00ff, #6200ea);
   clip-path: polygon(0 0, 70% 10%, 100% 100%, 0 100%);
-  transform:rotateX(30deg);
+  transform: rotateX(10deg);
+  /* Reduced rotation for better readability */
   border-radius: 20px;
   position: relative;
   z-index: 1;
+  display: flex;
+  align-items: center;
 }
 
 .contact-info {
   color: white;
   padding: 40px;
   max-width: 600px;
+  width: 100%;
 }
 
 .contact-info h1 {
-  margin-top: 50px;
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: bold;
   margin-bottom: 15px;
 }
 
 .contact-info p {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -53,25 +56,34 @@ body {
 
 .contact-info li {
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /* Contact form on top of polygon */
 .contact-form {
   position: absolute;
-  top: 10%;
+  top: 150px;
+  right: 10%;
   background: #fff;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
   z-index: 2;
-  width: 500px;
-  height: 530px;
+  width: 100%;
+  max-width: 450px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-left: 40%;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
 }
 
 .contact-form input,
@@ -79,25 +91,85 @@ body {
 .contact-form textarea {
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 10px;
+  padding: 12px;
   outline: none;
   font-size: 0.95rem;
+  width: 100%;
+  font-family: inherit;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+  resize: vertical;
 }
 
 .contact-form button {
   background: linear-gradient(to right, #7b00ff, #6200ea);
   color: white;
   border: none;
-  padding: 10px 0;
+  padding: 12px 0;
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
-  width:150px;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1rem;
 }
 
 .contact-form button:hover {
-  background: linear-gradient(to right,#6200ea,#7b00ff);
+  background: linear-gradient(to right, #6200ea, #7b00ff);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(123, 0, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .polygon-bg {
+    clip-path: none;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+    margin-top: 0;
+    padding: 60px 20px 400px 20px;
+    /* Space for form */
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-info {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .contact-info li {
+    justify-content: center;
+  }
+
+  .contact-form {
+    position: relative;
+    top: -350px;
+    /* Pull up into the purple area */
+    right: auto;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .contact-container {
+    padding-bottom: 0;
+    margin-bottom: -300px;
+    /* Adjust for the pulled up form */
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    top: -300px;
+  }
+
+  .contact-container {
+    margin-bottom: -250px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -110,183 +182,6 @@ body {
   }
 
   .contact-form {
-    width: 100%;
-    padding: 25px;
-  }
-}
-
-/* ===== Footer Section ===== */
-
-.footer {
-  background-color: #041a2f;
-  color: #fff;
-  padding: 60px 80px 20px;
-  font-family: "Poppins", sans-serif;
-  margin-top: 100px;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-/* ===== Left Section ===== */
-.footer-about {
-  flex: 1;
-  min-width: 280px;
-}
-
-.logo {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #ffffff;
-  margin-bottom: 15px;
-}
-
-.footer-about p {
-  color: #d0d6e1;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.footer-social {
-  display: flex;
-  gap: 15px;
-}
-
-.footer-social a {
-  color: white;
-  font-size: 1.6rem;
-  transition: 0.3s;
-}
-
-.footer-social a:hover {
-  color: #7b00ff;
-}
-
-/* ===== Middle Section ===== */
-.footer-links {
-  flex: 0.7;
-  min-width: 200px;
-}
-
-.footer-links h3 {
-  font-size: 1.3rem;
-  margin-bottom: 15px;
-  position: relative;
-}
-
-.footer-links h3::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 2px;
-  background: #7b00ff;
-  margin-top: 5px;
-}
-
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links ul li {
-  margin-bottom: 10px;
-}
-
-.footer-links ul li a {
-  text-decoration: none;
-  color: #d0d6e1;
-  transition: 0.3s;
-}
-
-.footer-links ul li a:hover {
-  color: #7b00ff;
-}
-
-/* ===== Right Section ===== */
-.footer-apps {
-  flex: 0.7;
-  min-width: 220px;
-}
-
-.footer-apps h3 {
-  font-size: 1.3rem;
-  margin-bottom: 15px;
-  position: relative;
-}
-
-.footer-apps h3::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 2px;
-  background: #7b00ff;
-  margin-top: 5px;
-}
-
-.app-buttons img {
-  width: 160px;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-
-/* ===== Bottom Line ===== */
-.footer-bottom {
-  text-align: center;
-  margin-top: 40px;
-  border-top: 1px solid #1b2a3a;
-  padding-top: 15px;
-  color: #b9c5d4;
-  font-size: 0.9rem;
-}
-
-/* ===== RESPONSIVE DESIGN ===== */
-@media (max-width: 992px) {
-  .footer {
-    padding: 50px 40px 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-
-  .footer-links,
-  .footer-apps {
-    text-align: center;
-  }
-
-  .footer-links h3::after,
-  .footer-apps h3::after {
-    margin: 5px auto;
-  }
-
-  .footer-social {
-    justify-content: center;
-  }
-
-  .app-buttons img {
-    width: 140px;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer {
-    padding: 40px 20px 15px;
-  }
-
-  .logo {
-    font-size: 1.7rem;
-  }
-
-  .footer-about p {
-    font-size: 0.9rem;
+    padding: 20px;
   }
 }

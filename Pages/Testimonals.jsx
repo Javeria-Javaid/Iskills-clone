@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import "./Testimonals.css";
 import { FaChevronLeft, FaChevronRight, FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
-
-
 const testimonials = [
   {
     id: 1,
@@ -48,9 +46,8 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Ensure these functions are declared BEFORE they are used in JSX
   const prevSlide = () => {
     setCurrentIndex((prev) =>
       prev === 0 ? testimonials.length - 1 : prev - 1
@@ -63,9 +60,9 @@ const Testimonials = () => {
     );
   };
   return (
-       
+
     <div className="testimonial-container">
-      <button className="arrow left" onClick={prevSlide}>
+      <button className="arrow left" onClick={prevSlide} aria-label="Previous testimonial">
         <FaChevronLeft />
       </button>
 
@@ -97,11 +94,11 @@ const Testimonials = () => {
         </div>
       </div>
 
-      <button className="arrow right" onClick={nextSlide}>
+      <button className="arrow right" onClick={nextSlide} aria-label="Next testimonial">
         <FaChevronRight />
       </button>
     </div>
-    
+
   )
 }
 

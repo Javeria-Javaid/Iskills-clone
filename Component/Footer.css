@@ -1,20 +1,19 @@
-
 .footer {
   background-color: #111;
   color: white;
   text-align: center;
-  padding: 60px 80px 20px;
+  padding: 80px 20px 20px;
   font-family: "Poppins", sans-serif;
-  margin-top: 50%;
-  padding: 80px 20px;
-  transform: translateY(150px); 
+  margin-top: 50px;
+  /* Reduced from 50% */
+  transform: translateY(50px);
   opacity: 0;
-  transition: all 1.2s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .footer-visible {
-  transform: translateY(0); 
-  opacity: 1; 
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .footer-container {
@@ -22,6 +21,9 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 /* ===== Left Section ===== */
@@ -68,6 +70,7 @@
   font-size: 1.3rem;
   margin-bottom: 15px;
   position: relative;
+  color: #fff;
 }
 
 .footer-links h3::after {
@@ -130,8 +133,8 @@
 .footer-bottom {
   text-align: center;
   margin-top: 40px;
-  border-top: 1px solid #1b2a3a;
-  padding-top: 15px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
   color: #b9c5d4;
   font-size: 0.9rem;
 }
@@ -139,7 +142,7 @@
 /* ===== RESPONSIVE ===== */
 @media (max-width: 992px) {
   .footer {
-    padding: 50px 40px 20px;
+    padding: 60px 20px 20px;
   }
 }
 
@@ -151,8 +154,10 @@
   }
 
   .footer-links,
-  .footer-apps {
+  .footer-apps,
+  .footer-about {
     text-align: center;
+    width: 100%;
   }
 
   .footer-links h3::after,
