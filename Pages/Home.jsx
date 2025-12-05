@@ -11,20 +11,25 @@ import FAQ from './FAQ.jsx'
 import Footer from '../Component/Footer.jsx'
 
 
+import InstructorProfile from './InstructorProfile.jsx'
+import Pillars from './Pillars.jsx'
+
 const Home = () => {
   return (
     <>
-        <Hero/>
-        <Intro/>
-        <Counter/>
-        <Timer/>
-        <Team/>
-        <Training/>
-        <Testimonals/>
-        <Testimonial2/>
-        <FAQ/>
-        <Footer/>
-      
+      <Hero />
+      <Intro />
+      <Counter />
+      <Timer />
+      <InstructorProfile />
+      <Pillars />
+      <Team />
+      <Training />
+      <Testimonals />
+      <Testimonial2 />
+      <FAQ />
+      <Footer />
+
     </>
   )
 }

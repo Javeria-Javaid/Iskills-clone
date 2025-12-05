@@ -21,16 +21,14 @@ function Hero() {
       <div className="hero-content">
         <h2>LEARN</h2>
         <h1>
-          <img src="https://cdn-icons-png.flaticon.com/128/4712/4712109.png" alt="icon" />
-          Master Development, Security & AI <br /> Skills in <span>Pakistan</span>
+          Master DevSecAI: Secure Your Future as an Integrated Security & AI Engineer
         </h1>
 
         <p>
-          Join ATechSkills' DEVSECAI Bootcamp - Learn Full Stack Development,
-          Cybersecurity, and Artificial Intelligence from industry experts at ATechSkills.
+          Go beyond specialized courses. Learn to build secure, intelligent systems using the combined power of Development, Cybersecurity, and AI.
         </p>
         <div className="hero-buttons">
-          <button className="btn-primary"><Link to="/Courses">Explore Bootcamp</Link></button>
+          <button className="btn-primary"><Link to="/Courses">Download the Full DevSecAI Syllabus</Link></button>
           <button className="btn-outline"><Link to="/Contact">Get in Touch</Link></button>
         </div>
       </div>

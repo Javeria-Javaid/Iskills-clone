@@ -1,0 +1,94 @@
+.pillars-section {
+    padding: 80px 20px;
+    background-color: #050a14;
+    /* Deep dark background */
+    color: #fff;
+    text-align: center;
+}
+
+.pillars-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #00ffcc, #007bff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pillars-header p {
+    color: #a0aec0;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pillar-card {
+    background: #111827;
+    padding: 40px 30px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #1f2937;
+    position: relative;
+    overflow: hidden;
+}
+
+.pillar-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 255, 204, 0.15);
+    border-color: #00ffcc;
+}
+
+.icon-box {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #00ffcc;
+}
+
+.pillar-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.pillar-card h3 {
+    font-size: 1rem;
+    color: #007bff;
+    /* Tech blue */
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.pillar-card p {
+    color: #d1d5db;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Specific accent colros per pillar? Optional, keeping uniform tech blue/green for now as per prompt */
+
+.integration-info {
+    margin-top: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 123, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 5px solid #007bff;
+}
+
+.integration-info h3 {
+    color: #00ffcc;
+    margin-bottom: 10px;
+}
+
+.integration-info p {
+    color: #e2e8f0;
+}
