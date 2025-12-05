@@ -1,5 +1,6 @@
 import React from "react";
 import "./Team.css";
+import haseebProfile from "../assets/haseeb-profile.jpg";
 
 const Team = () => {
 
@@ -36,8 +37,9 @@ const Team = () => {
         <div className="right-m2">
           <div className="member">
             <div className="img-circle sky">
-              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300" alt="Haseeb Akmal" />
+              <img src={haseebProfile} alt="Haseeb Akmal" />
             </div>
+
             <div className="info">
               <h3>Haseeb Akmal</h3>
               <p>AI & Machine Learning Instructor</p>

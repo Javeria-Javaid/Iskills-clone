@@ -1,5 +1,6 @@
 import React from "react";
 import "./InstructorProfile.css";
+import haseebProfile from "../assets/haseeb-profile.jpg";
 
 const InstructorProfile = () => {
     return (
@@ -7,7 +8,7 @@ const InstructorProfile = () => {
             <div className="profile-container">
                 <div className="profile-image">
                     {/* Using the asset we moved earlier */}
-                    <img src="/assets/haseeb-profile.jpg" alt="Rana Haseeb Akmal" />
+                    <img src={haseebProfile} alt="Rana Haseeb Akmal" />
                 </div>
                 <div className="profile-content">
                     <h2>Meet Your Lead AI & Machine Learning Trainer</h2>
