@@ -51,13 +51,10 @@ const Navbar = () => {
             </ul>
           </li>
           <li onClick={closeMenu}>
-            <img src="https://iskills.com/wp-content/uploads/2024/03/cog.svg" alt="" />
-            <Link to="/ToolsPage">SEO Tools</Link>
-          </li>
-          <li onClick={closeMenu}>
             <img src="https://iskills.com/wp-content/uploads/2024/04/success.svg" alt="" />
             <Link to="/Success">Success Stories</Link>
           </li>
+
           <li onClick={closeMenu}>
             <img src="https://iskills.com/wp-content/uploads/2024/03/file.svg" alt="" />
             <Link to="/Blog">Blog</Link>

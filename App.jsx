@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Component/Navbar.jsx'
 import Home from './Pages/Home.jsx'
-import ToolsPage from './Pages/ToolsPage.jsx'
+
 import Success from './Pages/Success.jsx'
 import Blog from './Pages/Blog.jsx'
 import Contact from './Pages/Contact.jsx'
@@ -11,7 +11,7 @@ import Development from './Pages/Development.jsx'
 import Enroll from './Pages/Enroll.jsx'
 import Courses from './Pages/Courses.jsx'
 import Index from './Index.jsx'
-import { Routes, Route, } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
 
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/ToolsPage" element={<ToolsPage />} />
+        <Route path="/ToolsPage" element={<Navigate to="/" replace />} />
         <Route path="/Success" element={<Success />} />
         <Route path="/Blog" element={<Blog />} />
         <Route path="/Contact" element={<Contact />} />
