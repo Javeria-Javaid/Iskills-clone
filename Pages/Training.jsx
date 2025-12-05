@@ -4,6 +4,7 @@ import "./Training.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaAngleRight, FaPhone, FaEnvelope, FaLocationDot } from "react-icons/fa6";
+import mustansarProfile from "../assets/mustansar-profile.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -148,7 +149,7 @@ const Training = () => {
       </div>
       <div className="mission">
         <div className='intro'>
-          <img src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500' alt="Mustansar Riaz" />
+          <img src={mustansarProfile} alt="Mustansar Riaz" />
           <div className='intro-lines'>
             <p id='introS'> Mustansar Riaz - CEO ——— — </p>
             <h1>Our Vision & Mission</h1>
