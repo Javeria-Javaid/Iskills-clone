@@ -1,13 +1,14 @@
 import React from 'react'
 import './Intro.css'
 import { FaAngleRight, FaStar } from "react-icons/fa"
+import mustansarProfile from "../assets/mustansar-profile.png";
 
 const Intro = () => {
   return (
     <section className='intro-container'>
       <div className='intro'>
         <div className="intro-image">
-          <img src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500' alt="Mustansar Riaz - CEO" />
+          <img src={mustansarProfile} alt="Mustansar Riaz - CEO" />
         </div>
         <div className='intro-lines'>
           <p className='section-subtitle'> Intro ATechSkills ——— — </p>
@@ -33,7 +34,7 @@ const Intro = () => {
           <h1>Master <span>Development, Security & AI</span><br className="desktop-only" /> with Industry Experts</h1>
 
           <div className='trainer-profile'>
-            <img src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200' alt="Trainer" />
+            <img src={mustansarProfile} alt="Trainer" />
             <div className='trainer-info'>
               <h2>Mustansar Riaz</h2>
               <p>Founder & CEO at ATechSkills | Cybersecurity Expert | 10+ Years Experience</p>
